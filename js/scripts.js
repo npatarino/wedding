@@ -209,7 +209,7 @@ $(document).ready(function () {
     $('#rsvp-form').on('submit', function (e) {
         e.preventDefault();
         var data = $(this).serialize();
-        console.log("data");
+        console.log(data);
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
             $.post('https://script.google.com/macros/s/AKfycbzoQFx5LlPT6VHKiPZhl2i6cPGpCjdt92K6ttCSf4ZP2nsxj_4f/exec', data)
                 .done(function (data) {
