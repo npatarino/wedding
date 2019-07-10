@@ -285,16 +285,18 @@
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
-                    <button class="btn-fill rsvp-btn">
+                    <button class="btn-fill rsvp-btn" onclick="sendForm()">
                         Yes,
                         that's me!
                     </button>
                 </form>
                 <script>
-                    function myFunction() {
+                    function sendForm() {
 
-                        var name = document.getElementById("name").value
-                        var email = document.getElementById("email").value
+                        var name = document.getElementById("name").value;
+                        var email = document.getElementById("email").value;
+                        var companion = document.getElementById("companion").value;
+                        var code = document.getElementById("invite_code").value;
                         window.open("https://docs.google.com/forms/d/e/1FAIpQLScrbqpiQNIutJdb-TMQeoqwLMNe8hNE__-DWE7NAXXDkIl93Q/viewform?usp=pp_url&entry.253345964="+name+"&entry.56804086="+email);
                     }
                 </script>
