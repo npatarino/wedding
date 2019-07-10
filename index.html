@@ -251,9 +251,11 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" id="email" class=""
-                                                                     placeholder="Your email"
-                                                                     required>
+                                <i class="fa fa-envelope"></i><select name="attend" id="attend" class=""
+                                                                      required>
+                                <option value="Sí 🎉">Sí 🎉</option>
+                                <option value="No 😔">No 😔</option>
+                            </select>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
@@ -267,10 +269,27 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
+                                <i class="fa fa-envelope"></i><input type="email" name="email" id="email" class=""
+                                                                     placeholder="Your email"
+                                                                     required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
                                 <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" id="companion"
-                                                                  max="4"
+                                                                  max="5"
                                                                   placeholder="Husband/Wife or kids"
+                                                                  value="0"
                                                                   required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-user"></i><input name="text" class="" id="allergies"
+                                                                 placeholder="¿Alergias o intolerancias?"
+                                                                 required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
@@ -296,7 +315,9 @@
                         var email = document.getElementById("email").value;
                         var companion = document.getElementById("companion").value;
                         var code = document.getElementById("invite_code").value;
-                        window.open("https://docs.google.com/forms/d/e/1FAIpQLScpiCWJ8w5Aa3QITczGPqt6lPfdPBube9u4KkBRmD7hTV7a9Q/viewform?usp=pp_url&entry.315206630="+email+"&entry.1264466009="+name+"&entry.1747714442="+companion+"&entry.1211886986="+code);
+                        var allergies = document.getElementById("allergies").value;
+                        var attend = document.getElementById("attend").value;
+                        window.open("https://docs.google.com/forms/d/e/1FAIpQLScpiCWJ8w5Aa3QITczGPqt6lPfdPBube9u4KkBRmD7hTV7a9Q/viewform?usp=pp_url&entry.277480015="+attend+"&entry.315206630="+email+"&entry.1264466009="+name+"&entry.1747714442="+companion+"&entry.896686672="+allergies+"&entry.1211886986="+code);
                     }
                 </script>
             </div>
