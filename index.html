@@ -251,14 +251,14 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
+                                <i class="fa fa-envelope"></i><input type="email" name="email" id="email" class=""
                                                                      placeholder="Your email"
                                                                      required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
+                                <i class="fa fa-user"></i><input name="name" class="" id="name"
                                                                  placeholder="Your name"
                                                                  required>
                             </div>
@@ -267,7 +267,7 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
+                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" id="companion"
                                                                   max="4"
                                                                   placeholder="Husband/Wife or kids"
                                                                   required>
@@ -290,6 +290,14 @@
                         that's me!
                     </button>
                 </form>
+                <script>
+                    function myFunction() {
+
+                        var name = document.getElementById("name").value
+                        var email = document.getElementById("email").value
+                        window.open("https://docs.google.com/forms/d/e/1FAIpQLScrbqpiQNIutJdb-TMQeoqwLMNe8hNE__-DWE7NAXXDkIl93Q/viewform?usp=pp_url&entry.253345964="+name+"&entry.56804086="+email);
+                    }
+                </script>
             </div>
         </div>
     </div>
